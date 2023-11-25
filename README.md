@@ -10,7 +10,7 @@ This will only work if you have created a container with Docker from
 
 Running PostToNostr-ssl.py will result in a webhook that starts with "https:[global address of your server machine]:5000/webhook".
 
-In the Post action for the webhook, { "id-key" : "test-key", "text" : "text" : "string to be POSTed JSON { "id-key" : "test-key", "text" : "string to be POSTed" } in the Post action to the webhook, specifying "Content-Type: application/json" and Content-Type in the HTTP POST action, and the string will be posted to Nostr.
+In the Post action for the webhook, { "id-key" : "test-key", "text" : "text" : "string to be POSTed JSON { "id-key" : "test-key", "text" : "string to be POSTed" } in the Post action to the webhook, specifying "Content-Type: application/json" and Content-Type in the HTTPS POST action, and the string will be posted to Nostr.
 
 To actually use it, change "/webhook" in PostToNostr.py to your favorite access URL, "port:5000" to your favorite port to change the port, and ""test-key"" to change the access key.
 
@@ -24,5 +24,3 @@ Some parts of the file must be rewritten as variables.
 
 It is assumed that the startup method is to sudo su and then start using "forever". Specifically, start it with "forever start -c python3 PostToNostr.py". It will work as a Webhook while it is running.
 After it is started, it will continue to run "forever" even if you exit from "su".
-
-Translated with www.DeepL.com/Translator (free version)
