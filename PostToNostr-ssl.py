@@ -14,11 +14,11 @@ def webhook():
         pulltext = json_a['text']
         if pulltext == None:
             abort(400)
-        command_word='【YourLocalHost】/home/darktribe/go/bin/algia n \"' + pulltext + '\"'
+        command_word='[YourLocalHost]/home/darktribe/go/bin/algia n \"' + pulltext + '\"'
         subprocess.run(command_word, shell=True)
         return 'success',200
     else:
         abort(400)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port='5000', debug=False,ssl_context=('【YourLocalHost】/nginx-proxy/certs/【YourDomainName】/fullchain.pem', '【YourLocalHost】/nginx-proxy/certs/【YourDomailName】/key.pem'))
+    app.run(host='0.0.0.0', port='5000', debug=False,ssl_context=('[YourLocalHost]/nginx-proxy/certs/[YourDomainName]/fullchain.pem', '[YourLocalHost]/nginx-proxy/certs/[YourDomailName]/key.pem'))
