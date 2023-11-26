@@ -6,7 +6,7 @@ Linuxサーバー上にNostrにポストを投稿するためのSSLのWebhookを
 前提として[algia](https://github.com/mattn/algia)が動作している事が必要です。 Linuxサーバー上で動いているalgiaを起動させる仕組みになっています。 リポジトリのconfig.jsonはこのプロジェクト用ではなく、algiaのおすすめのコンフィグです。PrivateKeyを書き換えて使ってください。　　
 
 また前提としてDockerのnginx-proxyを使ってSSL対応している事を前提にしています。　　
-[https://github.com/shipwebdotjp/nginx-proxy.git](https://github.com/shipwebdotjp/nginx-proxy.git)
+[https://github.com/shipwebdotjp/nginx-proxy.git](https://github.com/shipwebdotjp/nginx-proxy.git)　　
 からDockerでコンテナを作っている場合にのみ動作します。　　
 
 PostToNostr-SSL.pyを実行すると、「https:[global address of your server machine]:5000/webhook」で起動するWebhookになります。　　
