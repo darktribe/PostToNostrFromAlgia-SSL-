@@ -1,4 +1,4 @@
-Linuxサーバー上でalgiaを使ってNostrにポストするWebhookを作るツールのSSL版です。 Pythonを使っています。　　
+Linuxサーバー上でalgiaを使ってNostrにポストするWebhookを作るツールのSSL版です。 Pythonを使っています。  
 ミスで"PostToNostr-ssl.py"というファイルをアップしていますが"PostToNostr-SSL.py"を使って下さい。　　
 
 Linuxサーバー上にNostrにポストを投稿するためのSSLのWebhookを作ります。　　
