@@ -21,4 +21,4 @@ def webhook():
         abort(400)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port='5000', debug=False,ssl_context=('[username]/nginx-proxy/certs/[YourDomainName]/fullchain.pem', '[Yusername]/nginx-proxy/certs/[YourDomailName]/key.pem'))
+    app.run(host='0.0.0.0', port='5000', debug=False,ssl_context=('/home/[username]/nginx-proxy/certs/[YourDomainName]/fullchain.pem', '/home/[Yusername]/nginx-proxy/certs/[YourDomailName]/key.pem'))
